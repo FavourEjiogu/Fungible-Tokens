@@ -488,7 +488,9 @@ Alright, that's all for now, i'll be adding more CBIs after developer workshops.
 
 ## 📘 Check Out the Next Guide
 
-Continue learning more about Move and Sui smart contracts in the next guide in this series on my GitHub. Stay tuned for more hands-on examples that build directly on top of this one.
+**[Here](https://github.com/FavourEjiogu/Non-Fungible-Tokens)**, i will introduce you to the concept of non-fungibility, and how you can create your very own NFT.
+
+I’m also currently working on other kinds of fungible tokens, and I’ll add references here once I’m done, hence the need for you to star the repo.
 
 ---
 
