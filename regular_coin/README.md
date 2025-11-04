@@ -611,7 +611,7 @@ Replace `devnet` with your target network branch.
 
 ## 📘 Check Out the Next Guide
 
-Continue learning more about Move and Sui smart contracts [in the next guide in this series](https://github.com/FavourEjiogu/Fungible-Tokens/tree/main/regular_coin_example) on my GitHub. Stay tuned for more hands-on examples that build directly on top of this one.
+Continue learning more about Fungible Tokens, Move, and Sui smart contracts [in the next guide in this series](https://github.com/FavourEjiogu/Fungible-Tokens/tree/main/regular_coin_example) on my GitHub. Here, i would show you how to mint the token you just published, and you'll learn about PTBs, Sui's object model and Transaction flow, and how they (alongside other concepts) all come together to create a fungible token (coin). Stay tuned for more hands-on examples that build directly on top of this one.
 
 ---
 
