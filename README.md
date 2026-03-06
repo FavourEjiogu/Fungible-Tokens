@@ -1,56 +1,63 @@
 # 🪙 Fungible Tokens on Sui (Move Tutorial)
 
-Welcome! If you're here, you're probably curious about creating your own cryptocurrency, token, or coin on the Sui blockchain. You're in the right place!
+If you already know a thing or two about Sui and Move, you can just jump straight into [Regular Coin Creation](./regular_coin).
 
-This repository is designed to take you from knowing absolutely nothing about coin creation on Sui, to successfully deploying and minting your own token.
+But if you’re new here, welcome. Let's talk about creating your own cryptocurrency, token, or coin on the Sui blockchain. It might sound complicated at first, but once you break down how things work under the hood, it all starts to make sense.
 
-But before we dive into the code, let's take a moment to understand the tools we're working with.
+In the crypto space, having a custom token is often the starting point for building decentralized applications (dApps), games, DeFi protocols, or even just loyalty reward systems. This guide takes you from an absolute beginner to successfully publishing and minting your very own token.
 
----
-
-## 🤔 What is Sui?
-
-Sui (pronounced *swee*) is a next-generation Layer 1 blockchain designed from the ground up to make digital asset ownership fast, private, secure, and accessible to everyone.
-
-Unlike traditional blockchains like Ethereum or Bitcoin, which record transactions in a big sequence of blocks (like pages in a ledger book), Sui takes a completely different approach.
-
-### The Object-Centric Model
-
-In Sui, **everything is an object**.
-
-Think of it this way: On most blockchains, your account has a "balance" (e.g., Alice has 10 tokens). The blockchain just updates that number.
-On Sui, you actually own distinct, individual objects (e.g., Alice owns Token Object A, Token Object B).
-
-Why does this matter?
-- **Speed:** Because objects are independent, Sui can process transactions involving different objects at the same time (in parallel). It doesn't have to wait in a single line!
-- **Ownership:** Objects have clear owners. If you own an object, you are the only one who can interact with it (unless you make it shared).
-- **Flexibility:** Objects can own other objects, and objects can be customized to hold different types of data.
+Before we start looking at code, let’s go over what we are actually building on.
 
 ---
 
-## 🛠️ What is Move?
+## 🤔 So, What Exactly is Sui?
+
+Sui (pronounced *swee*) is a Layer 1 blockchain. It handles digital assets in a way that is totally different from older blockchains like Bitcoin or Ethereum.
+
+Most blockchains use an "account-based" model. Imagine a big ledger book that says: "Alice’s balance is 10 tokens. Bob’s balance is 5 tokens." When Alice sends Bob 5 tokens, the network updates those two balances in the ledger. Everyone waits in a single line for the ledger to update.
+
+Sui uses an **object-centric model**.
+
+In Sui, **everything is an object**. Instead of having a "balance" attached to your account, you literally own distinct, individual objects (think of them like unique digital items in your wallet: Token Object A, Token Object B).
+
+Why should you care about this?
+- **It’s Fast:** Because objects are independent, Sui doesn’t have to process transactions one by one in a single line. It can process transactions involving completely different objects at the exact same time.
+- **True Ownership:** Objects have clear, undeniable owners. If you own an object, you are the only person who can interact with it (unless you explicitly decide to share it with everyone).
+- **Customization:** Objects can hold other objects, and you can program them to contain any type of data you want.
+
+---
+
+## 🛠️ And What is Move?
 
 Move is the programming language we use to write smart contracts on Sui.
 
-If you're familiar with Ethereum, Move is to Sui what Solidity is to Ethereum. But Move was designed specifically to handle digital assets safely.
+If you've played around with Ethereum, Move is to Sui what Solidity is to Ethereum. The main difference is that Move was built strictly around safely managing digital assets.
 
-### Why Move?
+### Why do we use Move?
 
-- **Safety First:** Move was created with security as its primary goal. It prevents common bugs like reentrancy attacks (which have caused billions of dollars to be stolen on other blockchains).
-- **Resources:** In Move, digital assets are treated as "resources". A resource can never be copied or accidentally deleted. It can only be moved from one place to another (hence the name "Move"!).
-- **Abilities:** Move uses something called "abilities" (`copy`, `drop`, `store`, `key`) to strictly control what you can do with a type. You'll see this in action when we define our coin.
+- **It Treats Assets as Resources:** In Move, your digital assets are treated as "resources." A resource is special because it can never be accidentally copied or deleted out of thin air. It can only be moved from one place to another (which is why the language is called Move).
+- **Abilities Control Everything:** Move uses things called "abilities" (`copy`, `drop`, `store`, `key`) to define exactly what you are allowed to do with a piece of data. We'll be using these abilities a lot when creating our coin.
+- **Built for Security:** By making it very hard to accidentally copy or destroy assets, Move naturally prevents a lot of the common bugs and hacks that plague other blockchains.
 
 ---
 
 ## 🚀 The Course Structure
 
-This guide is broken down into bite-sized, easy-to-follow parts. I highly recommend going through them in order.
+I've broken this guide down into parts so it's easier to digest. Make sure you follow them in order.
 
 ### 📚 Part 1: [Regular Coin Creation](./regular_coin)
-Here, you'll learn how to write the Move code to create a deflationary coin. You'll understand decimals, type tags, and how to set up your coin's metadata (name, symbol, icon).
+This is where we actually write the Move code for a deflationary coin. You'll learn how to define your total supply, understand what decimals actually mean in crypto, set up type tags, and register your coin's metadata (like its name, symbol, and logo).
 
 ### 🪙 Part 2: [Publishing and Minting](./regular_coin_example)
-Once your code is ready, you need to actually deploy it to the blockchain. In this part, we'll cover how to publish your package, what happens during a transaction, and how to use Programmable Transaction Blocks (PTBs) to mint and transfer your shiny new coins to your wallet!
+Writing code is fun, but deploying it is better. In this section, we take the package you built in Part 1 and push it to the Sui network. We’ll look at what actually happens during a transaction and how to use Programmable Transaction Blocks (PTBs) to mint your initial supply straight to your wallet.
+
+---
+
+### What's Next?
+Right now, this repo covers standard, regular coins. But the Sui ecosystem is huge. Once you finish these basics, the same concepts apply to:
+- **Regulated Coins:** Tokens where you (the creator) control a "deny list" to block malicious addresses.
+- **Closed-Loop Tokens:** Think in-game currencies or loyalty points that can't be traded outside of your specific app.
+- **NFTs (Non-Fungible Tokens):** Unique, 1-of-1 digital assets.
 
 ---
 
