@@ -1,4 +1,4 @@
-# 🪙 Fungible Tokens on Sui (Move Tutorial)
+# Fungible Tokens on Sui (Move Tutorial)
 
 Welcome! If you're here, you're probably curious about creating your own token on the Sui blockchain. You're in the right place!
 
