@@ -32,7 +32,7 @@ Why does this matter?
 
 ---
 
-## 🛠️ And What is Move?
+## And What is Move?
 
 Move is the programming language we use to write smart contracts on Sui.
 
@@ -46,14 +46,14 @@ If you're familiar with Ethereum, Move is to Sui what Solidity is to Ethereum. B
 
 ---
 
-## 🚀 The Course Structure
+## The Course Structure
 
 I've broken this guide down into parts so it's easier to digest. Make sure you follow them in order.
 
-### 📚 Part 1: [Regular Coin Creation](./regular_coin)
+### Part 1: [Regular Coin Creation](./regular_coin)
 This is where we actually write the Move code for a deflationary coin. You'll learn how to define your total supply, understand what decimals actually mean in crypto, set up type tags, and register your coin's metadata (like its name, symbol, and logo).
 
-### 🪙 Part 2: [Publishing and Minting](./regular_coin_example)
+### Part 2: [Publishing and Minting](./regular_coin_example)
 Writing code is fun, but deploying it is better. In this section, we take the package you built in Part 1 and push it to the Sui network. We’ll look at what actually happens during a transaction and how to use Programmable Transaction Blocks (PTBs) to mint your initial supply straight to your wallet.
 
 ---
