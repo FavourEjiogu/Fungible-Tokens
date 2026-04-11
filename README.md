@@ -1,7 +1,5 @@
 # Fungible Tokens on Sui (Move Tutorial)
 
-Welcome! If you're here, you're probably curious about creating your own token on the Sui blockchain. You're in the right place!
-
 In the crypto space, having a custom token is often the starting point for building decentralized applications (dApps), games, DeFi protocols, or even just loyalty reward systems. This repo is designed to take you from knowing absolutely nothing about token creation on Sui, to successfully deploying and minting your own token.
 
 If you already know a thing or two about Sui and Move, you can just jump straight into [Regular Coin Creation](./regular_coin).
